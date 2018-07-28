@@ -47,6 +47,8 @@
     
     <title>
         
+            git入门修炼手册 | 
+        
         远方不远
     </title>
 
@@ -56,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",git">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -83,6 +85,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/tomorrow-night-eighties.min.css?2LJQzURO+Kr8r/fl/T8oMA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -214,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="远方不远">
-    <meta name="msapplication-starturl" content="http://yoursite.com/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/07/27/git基础命令/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="远方不远">
@@ -229,13 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/">
+    <meta property="og:url" content="http://yoursite.com/2018/07/27/git基础命令/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="远方不远">
+    <meta property="og:title" content="git入门修炼手册 | 远方不远">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="git"> 
 
+    
+        <meta property="article:published_time" content="Fri Jul 27 2018 00:35:44 GMT+0800">
+        <meta property="article:modified_time" content="Sat Jul 28 2018 22:05:28 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -243,35 +251,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com" />
+        <link rel="canonical" href="http://yoursite.com/2018/07/27/git基础命令/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
+
+
 <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
-    "@type": "Website",
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/07/27/git基础命令/index.html",
+    "headline": "git入门修炼手册",
+    "datePublished": "Fri Jul 27 2018 00:35:44 GMT+0800",
+    "dateModified": "Sat Jul 28 2018 22:05:28 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "不远",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg"
+        },
+        "description": "没有到不了的远方"
+    },
     "publisher": {
         "@type": "Organization",
         "name": "远方不远",
-        "logo": "/img/favicon.png"
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
     },
-    "url": "http://yoursite.com",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/img/favicon.png"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://yoursite.com"
-    },
-    "description": ""
+    "keywords": ",git",
+    "description": "",
 }
 </script>
-
-
 
 
     
@@ -305,357 +321,299 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
+                    <!-- Post TOC -->
+
     
-        <!-- Paradox Header -->
-        <!-- Daily pic -->
-<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
-
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-23/67670040.jpg)">
-        <p class="index-top-block-slogan"><a href="#">
-        
-            
-                没有到不了的远方
-            
-        
-        </a></p>
-    </div>
-
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>不远</strong>
-        </div>
-    </div>
-</div>
-
-        <!-- Blog info -->
-<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-
-    <!-- Search -->
-    
-    <!-- Google -->
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
-        </label>
-
-        <form autocomplete="off" id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-            <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
-            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
-
-            <input type="hidden" name="sitesearch" value="http://yoursite.com">
-        </form>
-    </div>
-
-
-
-
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="#" target="_blank">
-            <img src="/img/logo.png" alt="logo" />
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
         </a>
     </div>
+    -->
 
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>远方不远</strong>
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git入门修炼手册"><span class="post-toc-number">1.</span> <span class="post-toc-text">git入门修炼手册</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简介"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装与注册"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装与注册</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常规操作"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">常规操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#新建与克隆"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">新建与克隆</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#添加与提交"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">添加与提交</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#取回与推送"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">取回与推送</span></a></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-28/95910628.jpg)">
+    
+            <p class="article-headline-p">
+                git入门修炼手册
+            </p>
         </div>
-        <div class="section-spacer"></div>
 
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>不远</strong>
+        <span>7月 27, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
         </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-                <a class="index_share-link" href="/about" title="About">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        About
-                    </li>
-                </a>
-            
-        </ul>
+    -->
 
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
-                <!-- All Site UV -->
-                <a class="index_share-link" href="#">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        <span id="busuanzi_container_site_uv">
-                            <span id="busuanzi_value_site_uv"></span>&nbsp;浏览量
-                        </span>
-                    </li>
-                </a>
-            
+    <!-- Qrcode -->
+    
 
-            
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/git/">git</a>
+    </ul>
+    
 
-            
-                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=远方不远&url=http://yoursite.com&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到微博
-                    </li>
-                </a>
-            
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
 
-            
-                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=远方不远&url=http://yoursite.com&via=不远" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Twitter
-                    </li>
-                </a>
-            
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
 
-            
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Facebook
-                    </li>
-                </a>
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=git入门修炼手册&url=http://yoursite.com/2018/07/27/git基础命令/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=git入门修炼手册&url=http://yoursite.com/2018/07/27/git基础命令/index.html&via=不远" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
-            
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/27/git基础命令/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
 
-            
-                <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=远方不远&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com" target="_blank">
-                    <li class="mdl-menu__item">
-                        分享到 QQ
-                    </li>
-                </a>
-            
+    <!-- Share Google+ -->
+    
 
-            
-        </ul>
-    </div>
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=git入门修炼手册&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/07/27/git基础命令/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
 </div>
 
-    
-    <div class="locate-thumbnail-symbol"></div>
+                
 
-    <!-- Pin on top -->
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
+        <h1 id="git入门修炼手册"><a href="#git入门修炼手册" class="headerlink" title="git入门修炼手册"></a>git入门修炼手册</h1><p><strong>git是程序猿的另一个重要的生产力，所以掌握git的基本操作是一门必修课</strong></p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
+<p>Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
+<p>Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
+<h2 id="安装与注册"><a href="#安装与注册" class="headerlink" title="安装与注册"></a>安装与注册</h2><p><strong><a href="https://git-scm.com/download/mac" target="_blank" rel="noopener">OSX用户下载地址</a></strong></p>
+<p><strong><a href="https://git-scm.com/download/windows" target="_blank" rel="noopener">Windows用户下载地址</a></strong></p>
+<p><strong><a href="https://git-scm.com/download/linux" target="_blank" rel="noopener">Linux用户下载地址</a></strong></p>
+<p><strong>注册请进入<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a></strong></p>
+<h2 id="常规操作"><a href="#常规操作" class="headerlink" title="常规操作"></a>常规操作</h2><h3 id="新建与克隆"><a href="#新建与克隆" class="headerlink" title="新建与克隆"></a>新建与克隆</h3><ul>
+<li><strong>创建新仓库-<code>git init</code></strong></li>
+</ul>
+<p>创建新文件夹，打开，然后执行<code>git init</code>。就是这么简单，创建仓库就完成了。</p>
+<ul>
+<li><strong>克隆仓库-<code>git clone</code></strong></li>
+</ul>
+<ol>
+<li>执行如下命令以创建一个本地仓库的克隆版本<code>git clone /path/to/repository</code></li>
+<li>如果是远端服务器上的仓库，则执行<code>git clone xxx</code>xxx为仓库的地址，获取方式如下图<br><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-28/96872340.jpg" alt="仓库地址"></li>
+</ol>
+<h3 id="添加与提交"><a href="#添加与提交" class="headerlink" title="添加与提交"></a>添加与提交</h3><p><strong>本地仓库虽然看起来是一个东西，但实际是由三部分组成。</strong>如下所示</p>
+<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-28/95910628.jpg" alt="git工作流"></p>
+<ol>
+<li>第一部分是你能看到的，即本地的<code>工作目录</code></li>
+<li>第二部分是看不到的，即<code>git add</code>后进入的<code>暂存区</code>，它会临时保存你的改动</li>
+<li>第三部分是我们<code>git commit</code>后进去的区域，<code>head</code>，它是我们最后一次提交的结果</li>
+</ol>
+<ul>
+<li><strong>添加-提出更改<code>git add</code></strong></li>
+</ul>
+<p>提出更改-即将文件添加到暂存区，执行以下命令</p>
+<ol>
+<li><code>git add xx.xx</code>提交单个文件</li>
+<li><code>git add.</code>提交当前目录</li>
+</ol>
+<ul>
+<li><strong>提交-提交改动<code>git commit -m &quot;代码提交信息&quot;</code></strong></li>
+</ul>
+<p>这条指令是将代码提交到<code>head</code>部分，并将你的改动信息一同提交，下面就是我们的最后一步啦！</p>
+<h3 id="取回与推送"><a href="#取回与推送" class="headerlink" title="取回与推送"></a>取回与推送</h3><ul>
+<li><strong>更新变化<code>git pull</code></strong></li>
+</ul>
+<p>取回远程主机某个分支的更新，再与本地的指定分支合并</p>
+<ul>
+<li><strong>推送<code>git push</code></strong></li>
+</ul>
+<p><code>git push origin master</code>将改动提交到远端仓库【master为分支，也可是其他分支】</p>
+<p><strong>这样，基本的git指令就基本掌握了，当然这还远远不够，想要更强大，请参考下面的资料</strong></p>
+<p><strong><a href="http://www.runoob.com/git/git-tutorial.html" target="_blank" rel="noopener">Git 教程</a></strong></p>
+<p><strong><a href="https://git-scm.com/docs" target="_blank" rel="noopener">Git完整命令手册</a></strong></p>
 
-    <!-- Normal Post -->
-    
         
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-26/21740364.jpg">
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/07/27/atom与git协同工作/">ATOM与GitHub的协同工作</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/07/27/atom与git协同工作/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg" width="44px" height="44px" alt="不远's avatar">
-            </div>
-            <div>
-                <strong>不远</strong>
-                <span>7月 27, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术/">技术</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    
 </div>
 
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-28/95910628.jpg">
-    
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/07/27/git基础命令/">git入门修炼手册</a></p>
-    </div>
+                
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            ...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/07/27/git基础命令/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg" width="44px" height="44px" alt="不远's avatar">
-            </div>
-            <div>
-                <strong>不远</strong>
-                <span>7月 27, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术/">技术</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 来必力 -->
+<div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zODM4MC8xNDkwOA==">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
 </div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-28/19534282.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/07/27/命令行基础/">命令行小白入门【论如何让装逼入门】</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/07/27/命令行基础/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg" width="44px" height="44px" alt="不远's avatar">
-            </div>
-            <div>
-                <strong>不远</strong>
-                <span>7月 27, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/技术/">技术</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
 </div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
     }
-</script>
+</style>
 
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
     
-</div>
+        <a href="/2018/07/27/atom与git协同工作/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/07/27/命令行基础/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -981,12 +939,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    <!-- Swiftye -->
-    
-
-    <!-- Local Search-->
-    
-
 
 <!-- UC Browser Compatible -->
 <script>
@@ -1000,6 +952,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
 
@@ -1012,6 +968,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
