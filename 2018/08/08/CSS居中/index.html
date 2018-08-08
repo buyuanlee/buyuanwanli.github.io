@@ -47,7 +47,7 @@
     
     <title>
         
-            千变万化的div | 
+            CSS居中与布局 | 
         
         远方不远
     </title>
@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content=",CSS3 div">
+    <meta name="keywords" content=",CSS 布局">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -219,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="远方不远">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/05/00/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/08/CSS居中/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="远方不远">
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2018/08/05/00/">
+    <meta property="og:url" content="http://yoursite.com/2018/08/08/CSS居中/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="千变万化的div | 远方不远">
+    <meta property="og:title" content="CSS居中与布局 | 远方不远">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    <meta property="og:article:tag" content="CSS3 div"> 
+    <meta property="og:article:tag" content="CSS 布局"> 
 
     
-        <meta property="article:published_time" content="Sun Aug 05 2018 00:00:00 GMT+0800">
-        <meta property="article:modified_time" content="Sun Aug 05 2018 23:15:44 GMT+0800">
+        <meta property="article:published_time" content="Wed Aug 08 2018 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed Aug 08 2018 20:37:52 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/08/05/00/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/08/08/CSS居中/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/08/05/00/index.html",
-    "headline": "千变万化的div",
-    "datePublished": "Sun Aug 05 2018 00:00:00 GMT+0800",
-    "dateModified": "Sun Aug 05 2018 23:15:44 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2018/08/08/CSS居中/index.html",
+    "headline": "CSS居中与布局",
+    "datePublished": "Wed Aug 08 2018 00:00:00 GMT+0800",
+    "dateModified": "Wed Aug 08 2018 20:37:52 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "不远",
@@ -284,7 +284,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",CSS3 div",
+    "keywords": ",CSS 布局",
     "description": "",
 }
 </script>
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#千变万化的-lt-div-gt"><span class="post-toc-number">1.</span> <span class="post-toc-text">千变万化的&lt;div&gt;</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#平平无奇的正方形与长方形"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">平平无奇的正方形与长方形</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#各种圆"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">各种圆</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一些简单直线型图形。三角形，梯形平行四边形"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">一些简单直线型图形。三角形，梯形平行四边形</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS居中与布局"><span class="post-toc-number">1.</span> <span class="post-toc-text">CSS居中与布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#居中问题"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">居中问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#水平居中"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">水平居中</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#固定宽度"><span class="post-toc-number">1.1.1.1.</span> <span class="post-toc-text">固定宽度.</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#不确定宽度。"><span class="post-toc-number">1.1.1.2.</span> <span class="post-toc-text">不确定宽度。</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#垂直居中"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">垂直居中</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#确定高度的情况下"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">确定高度的情况下</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#不确定高度的情况下"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">不确定高度的情况下</span></a></li></ol></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -370,10 +370,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-30/87671786.jpg)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://cdn.lynda.com/course/417645/417645-636618158800124958-16x9.jpg)">
     
             <p class="article-headline-p">
-                千变万化的div
+                CSS居中与布局
             </p>
         </div>
 
@@ -392,7 +392,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>不远</strong>
-        <span>8月 05, 2018</span>
+        <span>8月 08, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -416,7 +416,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/CSS3-div/">CSS3 div</a>
+        <a class="post_tag-link" href="/tags/CSS-布局/">CSS 布局</a>
     </ul>
     
 
@@ -444,7 +444,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=千变万化的div&url=http://yoursite.com/2018/08/05/00/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=CSS居中与布局&url=http://yoursite.com/2018/08/08/CSS居中/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -453,7 +453,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=千变万化的div&url=http://yoursite.com/2018/08/05/00/index.html&via=不远" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=CSS居中与布局&url=http://yoursite.com/2018/08/08/CSS居中/index.html&via=不远" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -462,7 +462,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/05/00/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/08/CSS居中/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -477,7 +477,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=千变万化的div&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/05/00/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=CSS居中与布局&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/08/CSS居中/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -496,96 +496,101 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="千变万化的-lt-div-gt"><a href="#千变万化的-lt-div-gt" class="headerlink" title="千变万化的&lt;div&gt;"></a>千变万化的<code>&lt;div&gt;</code></h1><p><code>&lt;div&gt;</code>是<code>HTML</code>里再普通不过的一个元素了，但是如果加上各种属性的配合，那么它将会发出奇效，创造出千变万化的形状。下面我们就来感受下<code>&lt;div&gt;</code>的魅力.<br><strong>注：以下所以样式均由一个<code>&lt;div&gt;</code>完成</strong><br><strong><a href="https://buyuanwanli.github.io/shapes/index.html" target="_blank" rel="noopener">效果图请点击</a></strong></p>
-<h2 id="平平无奇的正方形与长方形"><a href="#平平无奇的正方形与长方形" class="headerlink" title="平平无奇的正方形与长方形"></a>平平无奇的正方形与长方形</h2><p>正方形与长方形没什么好介绍的，因为这个是本色演出。<br>1. 正方形</p>
-<pre><code class="css">.square {
-  width: 100px;
-  height: 100px;
-  background: #795548;
-}
-</code></pre>
-<ol start="2">
-<li>长方形</li>
-</ol>
-<pre><code class="css">.rectangle {
-  width: 200px;
-  height: 100px;
-  background: #ff5722;
-}
-</code></pre>
-<h2 id="各种圆"><a href="#各种圆" class="headerlink" title="各种圆"></a>各种圆</h2><p>包括正圆，椭圆，扇形等<br>主要原理：利用<code>border-radius</code>属性<br>1. 正圆<br>思路：正方形的四个角圆润之后就是圆形了</p>
-<pre><code class="css">.circle {
-  width: 200px;
+        <h1 id="CSS居中与布局"><a href="#CSS居中与布局" class="headerlink" title="CSS居中与布局"></a>CSS居中与布局</h1><p>学会布局是CSS的重要应用，在布局的过程中，我们经常遇到需要水平居中，垂直居中等各种个样的需求。今天就来整理一下关于布局方面的知识。</p>
+<h2 id="居中问题"><a href="#居中问题" class="headerlink" title="居中问题"></a>居中问题</h2><h3 id="水平居中"><a href="#水平居中" class="headerlink" title="水平居中"></a>水平居中</h3><p>水平居中一般也分为2种情况。</p>
+<h4 id="固定宽度"><a href="#固定宽度" class="headerlink" title="固定宽度."></a>固定宽度.</h4><p>这样的情况比较好处理。我们直接用<code>margin:0 auto;</code>就可以达到效果。<br>例子如下</p>
+<pre><code class="CSS">.content{
   height: 200px;
-  background: #ff9800;
-  border-radius: 50%;//50%=100px；大于这个值同效；
+  width: 400px;
+  margin: 0 auto;
+  background-color: #09B8BA;
 }
 </code></pre>
-<ol start="2">
-<li>椭圆<br>思路：正方形可以变成正圆，如果长宽不等的话，则圆会变扁，形成椭圆。</li>
-</ol>
-<pre><code class="css">.oval {
-  width: 200px;
-  height: 100px;
-  background: #ffc107;
-  border-radius: 100px / 50px;//分别为宽高的一半
-}
-</code></pre>
-<ol start="3">
-<li>扇形<br>思路：扇形其实就是圆的一部分；先利用<code>border</code>得到一个圆，然后再将多余部分利用<code>transparent</code>属性隐藏</li>
-</ol>
-<pre><code class="css">.cone {
-  width: 0;
-  height: 0;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-top: 100px solid #00bcd4;
-  border-radius: 50%;
-}
-</code></pre>
-<ol start="4">
-<li>弯月<br>思路：也是圆的一部分；先得到一个无色的圆，利用<code>box-shdow</code>属性得到弯月形状；</li>
-</ol>
-<pre><code class="css">.moon {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 20px 20px 0 0 #2196f3;
-}
-</code></pre>
-<h2 id="一些简单直线型图形。三角形，梯形平行四边形"><a href="#一些简单直线型图形。三角形，梯形平行四边形" class="headerlink" title="一些简单直线型图形。三角形，梯形平行四边形"></a>一些简单直线型图形。三角形，梯形平行四边形</h2><p>主要原理：利用方形<code>&lt;div&gt;</code>进行变形或者隐藏部分内容</p>
+<h4 id="不确定宽度。"><a href="#不确定宽度。" class="headerlink" title="不确定宽度。"></a>不确定宽度。</h4><p>这个其实是我们经常遇到的情况，而且在实际的应用中，我们也要经常使用不确定宽度以求减少bug的出现。那么当我们遇到不确定宽度的时候，又该如何居中呢。</p>
 <ol>
-<li>三角形<br>思路：和扇形类似，其实三角形也是正方向或者长方形的四分之一，只要利用<code>&lt;border&gt;</code>画上四个边，然后再利用<code>&lt;transparent&gt;</code>隐藏其他三个边即可。        </li>
+<li>将自己<code>display:inline-block</code>,父元素<code>text-align:center</code>;<br> 例子如下</li>
 </ol>
-<pre><code class="css">.triangle {
-  width: 0;
-  height: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid #ffeb3b;
+<pre><code class="CSS">.parentElement{
+  text-align: center;
+}
+.content{
+  display: inline-block;
+  border: 3px solid yellow;
+  vertical-align: top;
 }
 </code></pre>
+<p>此处需要注意的是，当<code>.main{displayinline-block}</code>后，会出现与父div下边框有几像素的间隙，需要加上<code>vertical-align:top</code>修正。</p>
 <ol start="2">
-<li>梯形</li>
+<li>利用相对定位。让父元素向左50%，子元素再相对父元素向左-50%<br>例子如下</li>
 </ol>
-<pre><code class="css">.trapezoid {
-  border-bottom: 100px solid #cddc39;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  height: 0;
-  width: 100px;
+<pre><code class="css">/***如果是需要相对定位的话，需要使其浮动***/
+.parentElement{
+  position: absolute;
+  left: 50%;
+}
+.content{
+  position: relative;
+  left: -50%;
 }
 </code></pre>
 <ol start="3">
-<li>平行四边形</li>
+<li>增加<code>{width:fit-content}</code>，利用<code>{margin:0 auto}</code>实现居中；<br>例子如下</li>
 </ol>
-<pre><code class="css">.parallelogram {
-  width: 150px;
-  height: 100px;
-  transform: skew(20deg);
-  background: #8bc34a;
+<pre><code class="css">  }
+  .content{
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+</code></pre>
+<h3 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h3><h4 id="确定高度的情况下"><a href="#确定高度的情况下" class="headerlink" title="确定高度的情况下"></a>确定高度的情况下</h4><p>设置 <code>height = line-height</code></p>
+<pre><code class="css">/***如果是需要相对定位的话，需要使其浮动***/
+.content{
+height: 400px;
+line-height: 400px;
 }
 </code></pre>
+<h4 id="不确定高度的情况下"><a href="#不确定高度的情况下" class="headerlink" title="不确定高度的情况下"></a>不确定高度的情况下</h4><ol>
+<li><p>利用决定定位</p>
+<pre><code class="CSS">parentElement{
+     position:relative;
+ }
+
+content{
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+}
+</code></pre>
+</li>
+<li>利用flex<pre><code class="css">parentElement{
+ display:flex;
+ align-items:center;
+}
+</code></pre>
+</li>
+<li>利用margin<pre><code class="css">.parentElement{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+background:orange;
+}
+.content{
+position:absolute;
+top:0;
+left:0;
+bottom:0;
+right:0;
+width:50%;
+height:50%;
+margin:auto;
+background:pink;}
+}
+</code></pre>
+</li>
+</ol>
 <p><strong>——远方不远</strong></p>
 
         
@@ -629,7 +634,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/08/06/千变万化的div/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/08/08/CSS小Tips-1/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -643,7 +648,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2018/08/02/html常用标签/" id="post_nav-older" class="next-content">
+        <a href="/2018/08/06/千变万化的div/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -735,7 +740,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">4</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">4</span></a>
             </ul>
         </li>
         
@@ -753,7 +758,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML-CSS/">HTML   CSS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/相关知识/">相关知识<span class="sidebar_archives-count">4</span></a>
+                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/相关知识/">相关知识<span class="sidebar_archives-count">4</span></a>
             </ul>
         </li>
         
@@ -779,7 +784,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">8</span>
+                <span class="sidebar-badge">9</span>
             </a>
         </li>
         

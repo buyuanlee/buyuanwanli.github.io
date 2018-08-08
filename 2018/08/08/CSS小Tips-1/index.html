@@ -47,7 +47,7 @@
     
     <title>
         
-            ATOM与GitHub的协同工作 | 
+            CSS小Tips-1 | 
         
         远方不远
     </title>
@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content=",IDE/ATOM/GitHub">
+    <meta name="keywords" content=",CSS">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -219,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="远方不远">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2018/07/27/frontend-daily180726/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/08/CSS小Tips-1/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="远方不远">
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2018/07/27/frontend-daily180726/">
+    <meta property="og:url" content="http://yoursite.com/2018/08/08/CSS小Tips-1/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="ATOM与GitHub的协同工作 | 远方不远">
+    <meta property="og:title" content="CSS小Tips-1 | 远方不远">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    <meta property="og:article:tag" content="IDE/ATOM/GitHub"> 
+    <meta property="og:article:tag" content="CSS"> 
 
     
-        <meta property="article:published_time" content="Fri Jul 27 2018 16:48:24 GMT+0800">
-        <meta property="article:modified_time" content="Thu Jul 26 2018 16:22:04 GMT+0800">
+        <meta property="article:published_time" content="Wed Aug 08 2018 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed Aug 08 2018 21:13:39 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/07/27/frontend-daily180726/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/08/08/CSS小Tips-1/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/07/27/frontend-daily180726/index.html",
-    "headline": "ATOM与GitHub的协同工作",
-    "datePublished": "Fri Jul 27 2018 16:48:24 GMT+0800",
-    "dateModified": "Thu Jul 26 2018 16:22:04 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2018/08/08/CSS小Tips-1/index.html",
+    "headline": "CSS小Tips-1",
+    "datePublished": "Wed Aug 08 2018 00:00:00 GMT+0800",
+    "dateModified": "Wed Aug 08 2018 21:13:39 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "不远",
@@ -284,7 +284,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",IDE/ATOM/GitHub",
+    "keywords": ",CSS",
     "description": "",
 }
 </script>
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#ATOM与GitHub的协同工作"><span class="post-toc-number">1.</span> <span class="post-toc-text">ATOM与GitHub的协同工作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#将本地文件链接到GitHub"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">将本地文件链接到GitHub</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#利用Atom随时提交本地文件到GitHub"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">利用Atom随时提交本地文件到GitHub</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS小Tips-1"><span class="post-toc-number">1.</span> <span class="post-toc-text">CSS小Tips-1</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于文档流"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">关于文档流</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#span的高度"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">span的高度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#脱离文档流的2个方法"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">脱离文档流的2个方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于高度与宽度"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">关于高度与宽度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#display-inline-block"><span class="post-toc-number">1.0.5.</span> <span class="post-toc-text">display:inline-block</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#vertical-align-top"><span class="post-toc-number">1.0.6.</span> <span class="post-toc-text">vertical-align: top</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#浮动元素换行"><span class="post-toc-number">1.0.7.</span> <span class="post-toc-text">浮动元素换行</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -370,10 +370,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-26/21740364.jpg)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-8/75792259.jpg)">
     
             <p class="article-headline-p">
-                ATOM与GitHub的协同工作
+                CSS小Tips-1
             </p>
         </div>
 
@@ -392,7 +392,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>不远</strong>
-        <span>7月 27, 2018</span>
+        <span>8月 08, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -416,7 +416,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/IDE-ATOM-GitHub/">IDE/ATOM/GitHub</a>
+        <a class="post_tag-link" href="/tags/CSS/">CSS</a>
     </ul>
     
 
@@ -444,7 +444,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=ATOM与GitHub的协同工作&url=http://yoursite.com/2018/07/27/frontend-daily180726/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=CSS小Tips-1&url=http://yoursite.com/2018/08/08/CSS小Tips-1/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -453,7 +453,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=ATOM与GitHub的协同工作&url=http://yoursite.com/2018/07/27/frontend-daily180726/index.html&via=不远" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=CSS小Tips-1&url=http://yoursite.com/2018/08/08/CSS小Tips-1/index.html&via=不远" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -462,7 +462,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/27/frontend-daily180726/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/08/CSS小Tips-1/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -477,7 +477,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=ATOM与GitHub的协同工作&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/07/27/frontend-daily180726/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=CSS小Tips-1&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/08/CSS小Tips-1/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -496,38 +496,40 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="ATOM与GitHub的协同工作"><a href="#ATOM与GitHub的协同工作" class="headerlink" title="ATOM与GitHub的协同工作"></a>ATOM与GitHub的协同工作</h1><h2 id="将本地文件链接到GitHub"><a href="#将本地文件链接到GitHub" class="headerlink" title="将本地文件链接到GitHub"></a>将本地文件链接到GitHub</h2><ol>
-<li><p>在GitHub上，create New Repository</p>
+        <h1 id="CSS小Tips-1"><a href="#CSS小Tips-1" class="headerlink" title="CSS小Tips-1"></a>CSS小Tips-1</h1><p><strong>CSS属性太多了，所以会有很多平时注意不到的知识点，这片博客主要就是记录一下平时遇到的一些需要注意的问题。虽然知识点比较杂，但是实用性很高。</strong></p>
+<h3 id="关于文档流"><a href="#关于文档流" class="headerlink" title="关于文档流"></a>关于文档流</h3><p><strong><code>文档流</code>：文档内元素流动的方向（内联元素从左往右流，块级元素从上往下流）</strong></p>
+<ol>
+<li>块级元素的高度由其内部文档流元素的高度总和决定【不是相等】<ul>
+<li>块级元素从上往下流，每个另起一行</li>
+</ul>
 </li>
-<li><p>填写Repository name ，点击Creative Repository</p>
+<li>内联元素：<ul>
+<li>左往右流，宽度不够另起一行</li>
+<li>英文单词默认不换行，可以增加属性word-break：break-all;</li>
+<li>中文会换行</li>
+</ul>
 </li>
-<li><p>创建后会有串命令行提示，如下图</p>
-<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-26/95965344.jpg" alt=""></p>
-</li>
-<li><p>在本地电脑上创建一个项目文件夹</p>
-</li>
-<li><p>右键单击文件夹，选择Git Bash Here</p>
-</li>
-<li><p>输入第三步的命令（根据自己的输入）</p>
-<pre><code class="git">echo &quot;# test&quot; &gt;&gt; README.md
-git init
-git add README.md
-git commit -m &quot;first commit&quot;
-git remote add origin https://github.com/by-lee/test.git
-git push -u origin master
-</code></pre>
-<ol start="7">
-<li>有时候会需要你输入<code>Username for &#39;https://github.com&#39;:</code> 后面填写自己的github账户名即可，然后会有一个弹窗要求输入github的账户密码，按要求输入即可。</li>
-<li>输入完成后，等待上传，上传完成后看到<code>Branch &#39;master&#39; set up to track remote branch &#39;master&#39; from &#39;origin&#39;.</code>代表你已经成功了。<h2 id="利用Atom随时提交本地文件到GitHub"><a href="#利用Atom随时提交本地文件到GitHub" class="headerlink" title="利用Atom随时提交本地文件到GitHub"></a>利用Atom随时提交本地文件到GitHub</h2></li>
-<li>用Atom打开刚刚创建好的项目文件（注意此时的文件夹的图标是与普通的图标是不一样的）<br><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-26/60809809.jpg" alt=""></li>
-<li>在此项目文件夹内即可创建修改文件了（例如，我们此时创建一个文件-<code>index.html</code>)</li>
-<li>保存创建的文件，打开git面板（<code>拓展-GitHub-切换Git面板</code>，或者鼠标移动到面板右边，点击&gt;）</li>
-<li>点击<code>Stage ALL</code><br><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-26/35718017.jpg" alt=""></li>
 </ol>
-</li>
-<li>填写<code>commit message</code>，此处填写你作出的改动例如本次我填写的是<code>create index.html</code>然后点击<code>Commit to master</code><br><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-26/16159490.jpg" alt=""></li>
-<li>点击<code>Push</code>上传<br><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-26/76558608.jpg" alt=""><br>等待上传完成，刷新github的仓库就可以看到你改动的代码啦！</li>
-</ol>
+<h3 id="span的高度"><a href="#span的高度" class="headerlink" title="span的高度"></a>span的高度</h3><p>文字居中是让2个字体的基线对齐</p>
+<pre><code>span{
+    font-size:100px;
+}
+</code></pre><ul>
+<li>100px是字体最高点到最低点的距离</li>
+<li>span的高度为100px+建议行高【每个字体不一样】</li>
+<li>建议行高可以用line-height锁定【不一定有用】</li>
+<li>一个块级元素内有多个span，高度由最高的span决定</li>
+<li>建议line-height比font-size多大一点</li>
+</ul>
+<h3 id="脱离文档流的2个方法"><a href="#脱离文档流的2个方法" class="headerlink" title="脱离文档流的2个方法"></a>脱离文档流的2个方法</h3><ul>
+<li>{position：fixed}不为元素预留空间，而是通过指定元素相对于屏幕视口的位置来指定元素位置。元素的位置在屏幕滚动时不会改变</li>
+<li>子元素{position：absolute};父元素{position:relative}</li>
+</ul>
+<h3 id="关于高度与宽度"><a href="#关于高度与宽度" class="headerlink" title="关于高度与宽度"></a>关于高度与宽度</h3><p>尽量不要使用具体值，用文档流扩充其总体的宽度与高度！即利用文档流的marging和padding值。<br>如果不得已要使用具体的值建议使用<code>{max-width:XXpx}</code>当宽度低于max值，会自适应</p>
+<h3 id="display-inline-block"><a href="#display-inline-block" class="headerlink" title="display:inline-block"></a>display:inline-block</h3><p>拥有了block元素可以设置width和height的特性，又保持了inline元素不换行的特性.<br>应用：在做横向列表的时候可以利用此属性。</p>
+<h3 id="vertical-align-top"><a href="#vertical-align-top" class="headerlink" title="vertical-align: top"></a>vertical-align: top</h3><p>此属性可以修正某些情况下的元素距离父元素有多余的像素。例如img与svg元素。</p>
+<h3 id="浮动元素换行"><a href="#浮动元素换行" class="headerlink" title="浮动元素换行"></a>浮动元素换行</h3><p>设置宽度百分比可以让子元素自动换行，例如<code>{width：50%}</code>可以实现每2个子元素换一行。<br>另外如果子元素如果要加边框的话，需要增加<code>{box-sizing：border-box；}</code></p>
+<p><strong>——远方不远</strong></p>
 
         
     
@@ -576,7 +578,7 @@ git push -u origin master
 
     <!-- Next Nav -->
     
-        <a href="/2018/07/27/frontend-daily180728/" id="post_nav-older" class="next-content">
+        <a href="/2018/08/08/CSS居中/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -668,7 +670,7 @@ git push -u origin master
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/08/">八月 2018<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">4</span></a>
             </ul>
         </li>
         
@@ -686,7 +688,7 @@ git push -u origin master
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/技术/">技术<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/HTML/">HTML<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/相关知识/">相关知识<span class="sidebar_archives-count">4</span></a>
             </ul>
         </li>
         
@@ -712,7 +714,7 @@ git push -u origin master
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">2</span>
+                <span class="sidebar-badge">9</span>
             </a>
         </li>
         
