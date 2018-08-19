@@ -47,7 +47,7 @@
     
     <title>
         
-            标签: HTML 元素 标签 | 
+            JS-全局变量与原型（公有属性） | 
         
         远方不远
     </title>
@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",JavaScript">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -85,6 +85,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/tomorrow-night-eighties.min.css?2LJQzURO+Kr8r/fl/T8oMA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -216,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="远方不远">
-    <meta name="msapplication-starturl" content="http://yoursite.com/tags/HTML-元素-标签/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/19/JS-全局变量与原型/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="远方不远">
@@ -231,13 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/tags/HTML-元素-标签/">
+    <meta property="og:url" content="http://yoursite.com/2018/08/19/JS-全局变量与原型/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: HTML 元素 标签 | 远方不远">
+    <meta property="og:title" content="JS-全局变量与原型（公有属性） | 远方不远">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="JavaScript"> 
 
+    
+        <meta property="article:published_time" content="Sun Aug 19 2018 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Sun Aug 19 2018 14:16:40 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -245,13 +251,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/tags/HTML-元素-标签/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/08/19/JS-全局变量与原型/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/08/19/JS-全局变量与原型/index.html",
+    "headline": "JS-全局变量与原型（公有属性）",
+    "datePublished": "Sun Aug 19 2018 00:00:00 GMT+0800",
+    "dateModified": "Sun Aug 19 2018 14:16:40 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "不远",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg"
+        },
+        "description": "没有到不了的远方"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "远方不远",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",JavaScript",
+    "description": "",
+}
+</script>
 
 
     
@@ -285,155 +321,369 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#全局对象"><span class="post-toc-number">1.</span> <span class="post-toc-text">全局对象</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#window对象"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">window对象</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简单类型与对象的区别"><span class="post-toc-number">2.</span> <span class="post-toc-text">简单类型与对象的区别</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Number"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Number()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#toString-NaN"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">toString</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#toBoolean"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">toBoolean</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#object"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">object</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#公用属性-原型"><span class="post-toc-number">3.</span> <span class="post-toc-text">公用属性(原型)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#原型链：属性之间的节点连接"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">原型链：属性之间的节点连接</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-2/23210803.jpg">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-19/10087535.jpg)">
+    
+            <p class="article-headline-p">
+                JS-全局变量与原型（公有属性）
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>不远</strong>
+        <span>8月 19, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/08/02/html常用标签/">HTML常用标签</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
         
-            ...
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
         
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/08/02/html常用标签/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg" width="44px" height="44px" alt="不远's avatar">
-            </div>
-            <div>
-                <strong>不远</strong>
-                <span>8月 02, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/HTML/">HTML</a>
-              </span>
-            
+    
 
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=JS-全局变量与原型（公有属性）&url=http://yoursite.com/2018/08/19/JS-全局变量与原型/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=JS-全局变量与原型（公有属性）&url=http://yoursite.com/2018/08/19/JS-全局变量与原型/index.html&via=不远" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/19/JS-全局变量与原型/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=JS-全局变量与原型（公有属性）&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/19/JS-全局变量与原型/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
 </div>
 
-            
-            
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="全局对象"><a href="#全局对象" class="headerlink" title="全局对象"></a>全局对象</h2><h3 id="window对象"><a href="#window对象" class="headerlink" title="window对象"></a>window对象</h3><ol>
+<li><p>BOM的核心对象，表示浏览器的一个实例。</p>
+</li>
+<li><p>双重角色</p>
+<ul>
+<li>JavaScript访问浏览器窗口的一个接口</li>
+<li>ECMAScript规定的Global对象</li>
+</ul>
+</li>
+<li><p>window实际是一个哈希，对象内容也分为2部分</p>
+<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-18/11693457.jpg" alt=""></p>
+<ul>
+<li>ECMAScript规定的<ul>
+<li>global.parseInt</li>
+<li>global.parseFloat</li>
+<li>global.Number</li>
+<li>global.String</li>
+<li>global.Boolean</li>
+<li>global.Object</li>
+</ul>
+</li>
+<li>浏览器内置的（浏览器不同，规定不同，标准不同）<ul>
+<li>window.alert(弹框提示)</li>
+<li>windowprompt(用户填写)</li>
+<li>window.comfirm(确认)</li>
+<li>window.console(开发者)</li>
+<li>window.setTimeout(function(){},3000)（指定秒后执行函数）</li>
+<li><strong>window.docuument(文档)</strong>【DOM】</li>
+<li>window.history【BOM】</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>注意</strong>：全局属性可以省略前面内容。例如<code>window.alert()</code>可以写出<code>alert()</code></p>
+<h2 id="简单类型与对象的区别"><a href="#简单类型与对象的区别" class="headerlink" title="简单类型与对象的区别"></a>简单类型与对象的区别</h2><h3 id="Number"><a href="#Number" class="headerlink" title="Number()"></a>Number()</h3><ol>
+<li><p>将传递的数据变成数字</p>
+<pre><code class="javascript">Number(&#39;1&#39;)        //1
+Number(false)    //0
+</code></pre>
+</li>
+<li><p>声明一个Number对象</p>
+<pre><code class="javascript">var n = new Number(1)
+//1:{valyeOf():1}
+
+var n1 = 1;                        //存在Stack栈内存中    
+var n2 = new Number(1);            //存在Heap堆内存中,n2是一个哈希，如下图[历史原因，像Java]
+</code></pre>
+<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-18/4629667.jpg" alt=""></p>
+</li>
+</ol>
+<p><strong>注意</strong>：由于设计者给其增加了临时的转换所以<code>var n = 1</code>虽然是简单的数据，但也可以访问属性。当调用访问属性动作时，会自动创建临时对象，实际访问的是临时对象的属性。</p>
+<pre><code class="javascript">var n = 1            
+n.xxx = 2                    //给临时对象增加属性xxx。值为2，动作结束后，临时对象会消失
+n.xxx = undefined            //此时临时对象已经消失，故访问结果为undefined
+</code></pre>
+<h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString"></a>toString</h3><p><strong><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods" target="_blank" rel="noopener">参考mdn链接</a></strong></p>
+<pre><code class="javascript">string.charAt(0)=string[0]             
+//获取索引对应字符。一个是临时，一个是哈希
+string.charCodeAt(0)                
+//获取获取索引对应字符的编码
+string.charCodeAt(0).toString(16)    
+//获取获取索引对应字符的编码，转16进制
+string.trim()                        
+//去除2边的空格
+string1.concat(string2)                
+//链接2个字符串
+string.slice(0,2)                    
+//取出0-1个字符
+string.replace(&#39;旧字符&#39;，&#39;新字符&#39;)        
+//替换字符
+</code></pre>
+<h3 id="toBoolean"><a href="#toBoolean" class="headerlink" title="toBoolean"></a>toBoolean</h3><pre><code class="javascript">var b = false;
+if (n){console.log(1)}    //不会打印，因为是数据b是false
+
+var b1 = new Boolean(false);
+if (b1){console.log(1)}    //会打印，因为b1是对象
+</code></pre>
+<h3 id="object"><a href="#object" class="headerlink" title="object"></a>object</h3><pre><code class="javascript">var o = {}
+var 01 = new Object()
+//无区别，但不相等，虽然内容相同，但是实际上是2个Stack内存地址
+</code></pre>
+<h2 id="公用属性-原型"><a href="#公用属性-原型" class="headerlink" title="公用属性(原型)"></a>公用属性(原型)</h2><ul>
+<li>众所周知，内存是很宝贵的资源，并且不同类型的对象都有部分重合的属性，所以为了节省内存资源，浏览器内会有一个公共的空间存储一些公有属性。</li>
+<li><strong>公用属性所在地：<code>__proto__</code></strong></li>
+</ul>
+<p>公有属性的位置以及内容如图所示：</p>
+<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-19/98966006.jpg" alt=""></p>
+<pre><code class="javascript">var o1 = new Object();
+var 02 = new Object();
+o1 === 01                    //false
+o1.toString === o1.toString    //true
+</code></pre>
+<ul>
+<li><p>除了Object最基本类型的对象，其他的如String和Boolean等也有独立于最基本公有属性的自己类型的公有属性。如下图所示</p>
+<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-19/87892143.jpg" alt=""></p>
+</li>
+<li><p>除了Object，剩下的都有2层公有属性(<code>null</code>.<code>undefined</code>除外)</p>
+</li>
+<li><p>调取属性时的顺序：调取的时候，先私有属性，在看<code>__proto__</code>公有属性，最后调取<code>__proto__.__proto__</code>公有属性的公有属性。</p>
+</li>
+</ul>
+<h3 id="原型链：属性之间的节点连接"><a href="#原型链：属性之间的节点连接" class="headerlink" title="原型链：属性之间的节点连接"></a>原型链：属性之间的节点连接</h3><ul>
+<li><p>原型链：</p>
+<p>每个实例对象（object ）都有一个私有属性（称之为<strong><code>__proto__</code></strong>）指向它的原型对象（<strong><code>prototype</code></strong>）。该原型对象也有一个自己的原型对象 ，层层向上直到一个对象的原型对象为 <code>null</code>。根据定义，<code>null</code> 没有原型，并作为这个<strong>原型链</strong>中的最后一个环节。</p>
+</li>
+<li><p><code>protype</code></p>
+<p>我们在前一篇博客学习内存的垃圾回收时知道，如果一个<code>Heap</code>内存的内容没有被引用的话，将会被回收。那么我们的公有属性又是被什么引用的呢？答案就是<strong><code>prototype</code></strong>.</p>
+<p>由此我们可以得到：</p>
+</li>
+</ul>
+<pre><code class="javascript">var o = new Object{};
+var n = new Number(1);
+o.__proto__ === o.prototype        //true
+n.__proto__.__proto__ === o.prototype        //true
+//其他类型的.__proto__.__proto__ === o.prototype
+</code></pre>
+<ul>
+<li><p><code>prototype</code>和<code>__proto__</code>的区别</p>
+<ol>
+<li>**protype在浏览器打开时就会生成.而<code>__proto__</code>是在写代码的时候才会产生的 </li>
+<li>var 对象 = new 函数（）。<code>__proto__</code>是对象的属性，<code>prototype</code>是函数的属性</li>
+<li><code>Object.__proto__ === Function.prototype</code>,所以<code>Function.__proto__ === Function.prototype</code>,</li>
+</ol>
+</li>
+</ul>
+<p><strong>——远方不远</strong></p>
+
         
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-1/44929753.jpg">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/08/01/html常见元素分类/">HTML的元素家族</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            ...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/08/01/html常见元素分类/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-27/18290060.jpg" width="44px" height="44px" alt="不远's avatar">
-            </div>
-            <div>
-                <strong>不远</strong>
-                <span>8月 01, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/HTML/">HTML</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
 </div>
 
-            
-            
-        
-    
 
-    
+                
 
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 来必力 -->
+<div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zODM4MC8xNDkwOA==">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
+</div>
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
     }
-</script>
+</style>
 
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
     
-</div>
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/08/17/JS数据类型深入/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -609,6 +859,14 @@ It will not impact the appearance and can give developers a lot of support :)
                     
 
                     
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
 
                     <!--Footer-->
 <footer class="mdl-mini-footer" id="bottom">
@@ -764,6 +1022,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
 
@@ -776,6 +1038,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
