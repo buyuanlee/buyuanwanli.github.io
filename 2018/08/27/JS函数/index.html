@@ -47,7 +47,7 @@
     
     <title>
         
-            git入门修炼手册 | 
+            JS函数 | 
         
         远方不远
     </title>
@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content=",git 命令行">
+    <meta name="keywords" content=",JavaScript">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -219,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="远方不远">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2018/07/27/git基础命令/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/27/JS函数/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="远方不远">
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2018/07/27/git基础命令/">
+    <meta property="og:url" content="http://yoursite.com/2018/08/27/JS函数/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="git入门修炼手册 | 远方不远">
+    <meta property="og:title" content="JS函数 | 远方不远">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    <meta property="og:article:tag" content="git 命令行"> 
+    <meta property="og:article:tag" content="JavaScript"> 
 
     
-        <meta property="article:published_time" content="Fri Jul 27 2018 00:35:44 GMT+0800">
-        <meta property="article:modified_time" content="Fri Jul 27 2018 00:00:00 GMT+0800">
+        <meta property="article:published_time" content="Mon Aug 27 2018 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Mon Aug 27 2018 00:09:37 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/07/27/git基础命令/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/08/27/JS函数/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/07/27/git基础命令/index.html",
-    "headline": "git入门修炼手册",
-    "datePublished": "Fri Jul 27 2018 00:35:44 GMT+0800",
-    "dateModified": "Fri Jul 27 2018 00:00:00 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2018/08/27/JS函数/index.html",
+    "headline": "JS函数",
+    "datePublished": "Mon Aug 27 2018 00:00:00 GMT+0800",
+    "dateModified": "Mon Aug 27 2018 00:09:37 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "不远",
@@ -284,7 +284,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",git 命令行",
+    "keywords": ",JavaScript",
     "description": "",
 }
 </script>
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#git入门修炼手册"><span class="post-toc-number">1.</span> <span class="post-toc-text">git入门修炼手册</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#简介"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装与注册"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装与注册</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常规操作"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">常规操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#新建与克隆"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">新建与克隆</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#添加与提交"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">添加与提交</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#取回与推送"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">取回与推送</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#函数的5种声明"><span class="post-toc-number">1.</span> <span class="post-toc-text">函数的5种声明</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#具名函数"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">具名函数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#匿名函数"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">匿名函数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#具名函数赋给变量"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">具名函数赋给变量</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#window-Function-函数对象"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">window.Function 函数对象</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#箭头函数"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">箭头函数</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#函数的name"><span class="post-toc-number">2.</span> <span class="post-toc-text">函数的name</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#如何调用函数"><span class="post-toc-number">3.</span> <span class="post-toc-text">如何调用函数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#函数是什么？"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">函数是什么？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#eval"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">eval():</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#call"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">call()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#调用"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">调用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#f-call-的用法"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">f.call()的用法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#this和arguments"><span class="post-toc-number">4.</span> <span class="post-toc-text">this和arguments</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#作用域"><span class="post-toc-number">5.</span> <span class="post-toc-text">作用域</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#闭包"><span class="post-toc-number">6.</span> <span class="post-toc-text">闭包</span></a></li></ol>
     </ul>
     
 
@@ -370,10 +370,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-28/95910628.jpg)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-27/33753931.jpg)">
     
             <p class="article-headline-p">
-                git入门修炼手册
+                JS函数
             </p>
         </div>
 
@@ -392,7 +392,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>不远</strong>
-        <span>7月 27, 2018</span>
+        <span>8月 27, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -416,7 +416,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/git-命令行/">git 命令行</a>
+        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a>
     </ul>
     
 
@@ -444,7 +444,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=git入门修炼手册&url=http://yoursite.com/2018/07/27/git基础命令/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=JS函数&url=http://yoursite.com/2018/08/27/JS函数/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -453,7 +453,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=git入门修炼手册&url=http://yoursite.com/2018/07/27/git基础命令/index.html&via=不远" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=JS函数&url=http://yoursite.com/2018/08/27/JS函数/index.html&via=不远" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -462,7 +462,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/27/git基础命令/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/27/JS函数/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -477,7 +477,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=git入门修炼手册&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/07/27/git基础命令/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=JS函数&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/27/JS函数/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -496,55 +496,104 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="git入门修炼手册"><a href="#git入门修炼手册" class="headerlink" title="git入门修炼手册"></a>git入门修炼手册</h1><p><strong>git是程序猿的另一个重要的生产力，所以掌握git的基本操作是一门必修课</strong></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
-<p>Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
-<p>Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
-<h2 id="安装与注册"><a href="#安装与注册" class="headerlink" title="安装与注册"></a>安装与注册</h2><p><strong><a href="https://git-scm.com/download/mac" target="_blank" rel="noopener">OSX用户下载地址</a></strong></p>
-<p><strong><a href="https://git-scm.com/download/windows" target="_blank" rel="noopener">Windows用户下载地址</a></strong></p>
-<p><strong><a href="https://git-scm.com/download/linux" target="_blank" rel="noopener">Linux用户下载地址</a></strong></p>
-<p><strong>注册请进入<a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a></strong></p>
-<h2 id="常规操作"><a href="#常规操作" class="headerlink" title="常规操作"></a>常规操作</h2><h3 id="新建与克隆"><a href="#新建与克隆" class="headerlink" title="新建与克隆"></a>新建与克隆</h3><ul>
-<li><strong>创建新仓库-<code>git init</code></strong></li>
-</ul>
-<p>创建新文件夹，打开，然后执行<code>git init</code>。就是这么简单，创建仓库就完成了。</p>
-<ul>
-<li><strong>克隆仓库-<code>git clone</code></strong></li>
-</ul>
-<ol>
-<li>执行如下命令以创建一个本地仓库的克隆版本<code>git clone /path/to/repository</code></li>
-<li>如果是远端服务器上的仓库，则执行<code>git clone xxx</code>xxx为仓库的地址，获取方式如下图<br><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-28/96872340.jpg" alt="仓库地址"></li>
-</ol>
-<h3 id="添加与提交"><a href="#添加与提交" class="headerlink" title="添加与提交"></a>添加与提交</h3><p><strong>本地仓库虽然看起来是一个东西，但实际是由三部分组成。</strong>如下所示</p>
-<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-7-28/95910628.jpg" alt="git工作流"></p>
-<ol>
-<li>第一部分是你能看到的，即本地的<code>工作目录</code></li>
-<li>第二部分是看不到的，即<code>git add</code>后进入的<code>暂存区</code>，它会临时保存你的改动</li>
-<li>第三部分是我们<code>git commit</code>后进去的区域，<code>head</code>，它是我们最后一次提交的结果</li>
-</ol>
-<ul>
-<li><strong>添加-提出更改<code>git add</code></strong></li>
-</ul>
-<p>提出更改-即将文件添加到暂存区，执行以下命令</p>
-<ol>
-<li><code>git add xx.xx</code>提交单个文件</li>
-<li><code>git add.</code>提交当前目录</li>
-</ol>
-<ul>
-<li><strong>提交-提交改动<code>git commit -m &quot;代码提交信息&quot;</code></strong></li>
-</ul>
-<p>这条指令是将代码提交到<code>head</code>部分，并将你的改动信息一同提交，下面就是我们的最后一步啦！</p>
-<h3 id="取回与推送"><a href="#取回与推送" class="headerlink" title="取回与推送"></a>取回与推送</h3><ul>
-<li><strong>更新变化<code>git pull</code></strong></li>
-</ul>
-<p>取回远程主机某个分支的更新，再与本地的指定分支合并</p>
-<ul>
-<li><strong>推送<code>git push</code></strong></li>
-</ul>
-<p><code>git push origin master</code>将改动提交到远端仓库【master为分支，也可是其他分支】</p>
-<p><strong>这样，基本的git指令就基本掌握了，当然这还远远不够，想要更强大，请参考下面的资料</strong></p>
-<p><strong><a href="http://www.runoob.com/git/git-tutorial.html" target="_blank" rel="noopener">Git 教程</a></strong></p>
-<p><strong><a href="https://git-scm.com/docs" target="_blank" rel="noopener">Git完整命令手册</a></strong></p>
+        <h2 id="函数的5种声明"><a href="#函数的5种声明" class="headerlink" title="函数的5种声明"></a>函数的5种声明</h2><h3 id="具名函数"><a href="#具名函数" class="headerlink" title="具名函数"></a>具名函数</h3><pre><code class="javascript">function x (input1，input2){
+    return undefined
+}
+//x 是一个特殊的变量，但是只能是函数
+//输入1，输入2是参数
+//必须有一个rturn值，不写的话，浏览器会自动添加
+</code></pre>
+<h3 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h3><pre><code class="javascript">x = function (input1,input2){
+    return undefined
+}
+//不能单独使用，需要赋给一个变量
+</code></pre>
+<h3 id="具名函数赋给变量"><a href="#具名函数赋给变量" class="headerlink" title="具名函数赋给变量"></a>具名函数赋给变量</h3><pre><code class="javascript">var x = function y (input1,input2){}
+console.log(y)
+//Uncaught referenceError:y is not defined...
+
+/* 不一致性！！！ */
+
+function y(){}
+console.log(y)
+//function y()
+</code></pre>
+<h3 id="window-Function-函数对象"><a href="#window-Function-函数对象" class="headerlink" title="window.Function 函数对象"></a>window.Function 函数对象</h3><pre><code class="javascript">new Function(&#39;x&#39;,&#39;y&#39;,&#39;return x+y&#39;)
+//x,y为参数；return x+y是函数体
+</code></pre>
+<h3 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h3><pre><code class="javascript">(x,y) =&gt;{return x+y}
+(x,y) =&gt; x+y 
+//函数体只有一句话，不能返回一个对象；花括号和return一起去掉
+n =&gt; n*n
+//参数只有一个，可以省略参数的括号
+</code></pre>
+<h2 id="函数的name"><a href="#函数的name" class="headerlink" title="函数的name"></a>函数的name</h2><pre><code class="javascript">function f(){}
+f.name //&quot;f&quot;
+var f = function (){}
+f.name //&quot;f&quot;
+var f = function f1(){}
+f.name//&quot;f1&quot;
+f = new Function()
+f.name//&quot;anonymous&quot;  anonymous：匿名
+</code></pre>
+<h2 id="如何调用函数"><a href="#如何调用函数" class="headerlink" title="如何调用函数"></a>如何调用函数</h2><h3 id="函数是什么？"><a href="#函数是什么？" class="headerlink" title="函数是什么？"></a>函数是什么？</h3><p>JavaScript DOM编程艺术是这样定义的：</p>
+<blockquote>
+<p>函数就是一组允许你在你的代码里随时调用的语句。每个函数实际上是一个短小的脚本。</p>
+</blockquote>
+<h3 id="eval"><a href="#eval" class="headerlink" title="eval():"></a>eval():</h3><p>作用：给一个字符串当作代码执行</p>
+<pre><code class="javascript">eval(&#39;1+1&#39;)
+eval(&#39;alert(1)&#39;)
+</code></pre>
+<h3 id="call"><a href="#call" class="headerlink" title="call()"></a>call()</h3><p> 指向公用属性的<code>__proto__.call()</code>调用函数的函数体</p>
+<p>f 是指对象</p>
+<p>f.call()是执行对象的函数体</p>
+<h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><p>函数的调用过程就是eval(函数体)的过程</p>
+<pre><code class="javascript">f.call = function(){
+    eval(f.body)
+}
+</code></pre>
+<h3 id="f-call-的用法"><a href="#f-call-的用法" class="headerlink" title="f.call()的用法"></a>f.call()的用法</h3><pre><code class="javascript">function f(x,y){return x+y}//函数本体
+f(2,3)            //普通调用
+f.call(undefined,1,2) //正规硬核调用
+</code></pre>
+<h2 id="this和arguments"><a href="#this和arguments" class="headerlink" title="this和arguments"></a>this和arguments</h2><blockquote>
+<p><strong>arguments</strong> 是一个对应于传递给函数的参数的类数组对象。</p>
+<p><strong>this</strong>对象是在运行时基于函数的执行环境绑定的，无法在执行期间被复制。全局函数中，<strong>this</strong>等于<strong>window</strong>；当函数作为某个对象的方法调用时，<strong>this</strong>等于那个对象。</p>
+</blockquote>
+<p><strong>call</strong>的第一个参数可以用<strong>this</strong>得到</p>
+<p><strong>call</strong>的后面的参数可以用<strong>arguments</strong>得到</p>
+<pre><code class="javascript">f.call(undefined,1,2) 
+//undefined是this
+//1，2是argument
+</code></pre>
+<pre><code class="javascript">f = function(){
+    console.log(this)
+    console.log(arguments)
+}
+</code></pre>
+<p>普通模式下，如果<strong>this</strong>是<strong>undefined</strong>；<strong>use strict</strong>严格模式，则<strong>this</strong>是<strong>window</strong></p>
+<p>如下所示</p>
+<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-26/76545482.jpg" alt=""></p>
+<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><blockquote>
+<p>每个函数都有自己的执行环境；当代码在一个环境中执行时，会创建变量对象的一个作用域链</p>
+</blockquote>
+<pre><code class="javascript">var a = 1
+function f1(){
+    var a = 2
+    f2.call(undefined)
+
+    function f2(){
+        var a = 3
+        console.log(a)
+    }
+}
+f1.call(undefined)
+console.log(a)
+</code></pre>
+<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><p>如果一个函数使用了它范围外的变量，那么这个函数加上这个变量就是闭包。</p>
+<blockquote>
+<p>闭包是指有权访问另一个函数作用域中的变量的函数</p>
+</blockquote>
 <p><strong>——远方不远</strong></p>
 
         
@@ -588,21 +637,13 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/07/30/浅析http【请求与响应】/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/07/27/命令行基础/" id="post_nav-older" class="next-content">
+        <a href="/2018/08/19/JS-全局变量与原型/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
