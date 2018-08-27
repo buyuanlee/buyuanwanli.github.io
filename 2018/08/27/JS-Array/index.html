@@ -47,7 +47,7 @@
     
     <title>
         
-            HTML的元素家族 | 
+            JS-Array | 
         
         远方不远
     </title>
@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content=",HTML 元素 标签">
+    <meta name="keywords" content=",JavaScript">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -219,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="远方不远">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/01/html常见元素分类/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/27/JS-Array/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="远方不远">
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2018/08/01/html常见元素分类/">
+    <meta property="og:url" content="http://yoursite.com/2018/08/27/JS-Array/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="HTML的元素家族 | 远方不远">
+    <meta property="og:title" content="JS-Array | 远方不远">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    <meta property="og:article:tag" content="HTML 元素 标签"> 
+    <meta property="og:article:tag" content="JavaScript"> 
 
     
-        <meta property="article:published_time" content="Wed Aug 01 2018 00:00:00 GMT+0800">
-        <meta property="article:modified_time" content="Mon Aug 06 2018 00:25:23 GMT+0800">
+        <meta property="article:published_time" content="Mon Aug 27 2018 00:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Mon Aug 27 2018 11:00:50 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/08/01/html常见元素分类/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/08/27/JS-Array/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/08/01/html常见元素分类/index.html",
-    "headline": "HTML的元素家族",
-    "datePublished": "Wed Aug 01 2018 00:00:00 GMT+0800",
-    "dateModified": "Mon Aug 06 2018 00:25:23 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2018/08/27/JS-Array/index.html",
+    "headline": "JS-Array",
+    "datePublished": "Mon Aug 27 2018 00:00:00 GMT+0800",
+    "dateModified": "Mon Aug 27 2018 11:00:50 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "不远",
@@ -284,7 +284,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",HTML 元素 标签",
+    "keywords": ",JavaScript",
     "description": "",
 }
 </script>
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HTML的元素家族"><span class="post-toc-number">1.</span> <span class="post-toc-text">HTML的元素家族</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#块级元素"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">块级元素</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#行内元素"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">行内元素</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#空元素"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">空元素</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#可替换元素【css内容】"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">可替换元素【css内容】</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#什么是Array？"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是Array？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#定义"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">定义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#与Object对象的异同点"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">与Object对象的异同点</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Array的不一致性"><span class="post-toc-number">2.</span> <span class="post-toc-text">Array的不一致性</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#伪数组"><span class="post-toc-number">3.</span> <span class="post-toc-text">伪数组</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Arrary的部分API"><span class="post-toc-number">4.</span> <span class="post-toc-text">Arrary的部分API</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#map"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">map()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#forEach"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">forEach()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#filter"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">filter()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#reverse"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">reverse()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#sort"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">sort()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#join"><span class="post-toc-number">4.6.</span> <span class="post-toc-text">join()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#concat"><span class="post-toc-number">4.7.</span> <span class="post-toc-text">concat()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#reduce"><span class="post-toc-number">4.8.</span> <span class="post-toc-text">reduce()</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -370,10 +370,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-1/44929753.jpg)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-27/41036204.jpg)">
     
             <p class="article-headline-p">
-                HTML的元素家族
+                JS-Array
             </p>
         </div>
 
@@ -392,7 +392,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>不远</strong>
-        <span>8月 01, 2018</span>
+        <span>8月 27, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -416,7 +416,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/HTML-元素-标签/">HTML 元素 标签</a>
+        <a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a>
     </ul>
     
 
@@ -444,7 +444,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=HTML的元素家族&url=http://yoursite.com/2018/08/01/html常见元素分类/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=JS-Array&url=http://yoursite.com/2018/08/27/JS-Array/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -453,7 +453,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=HTML的元素家族&url=http://yoursite.com/2018/08/01/html常见元素分类/index.html&via=不远" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=JS-Array&url=http://yoursite.com/2018/08/27/JS-Array/index.html&via=不远" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -462,7 +462,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/01/html常见元素分类/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/27/JS-Array/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -477,7 +477,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=HTML的元素家族&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/01/html常见元素分类/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=远方不远&title=JS-Array&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/27/JS-Array/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -496,23 +496,190 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="HTML的元素家族"><a href="#HTML的元素家族" class="headerlink" title="HTML的元素家族"></a>HTML的元素家族</h1><p>要想熟练掌握<code>HTML</code>，不光要知道它拥有哪些元素，还要搞清楚这些元素属于什么类型，这样才能有利于我们更好的利用这门知识。<br>那么在<code>HTML</code>里面，有哪些常见的元素分类呢？常见的分类有下面这些</p>
+        <h2 id="什么是Array？"><a href="#什么是Array？" class="headerlink" title="什么是Array？"></a>什么是Array？</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote>
+<p>数组：数组是按次序排列的一组值</p>
+</blockquote>
+<p><strong>在JS中：用Array构造出来的对象</strong></p>
+<pre><code class="javascript">a = [1,2,3]
+obj = {0:1,1:2,2:3,length:3}    
+</code></pre>
+<h3 id="与Object对象的异同点"><a href="#与Object对象的异同点" class="headerlink" title="与Object对象的异同点"></a>与Object对象的异同点</h3><ul>
+<li><p>相同点：</p>
 <ol>
-<li>块级元素</li>
-<li>行内元素</li>
-<li>可替换元素</li>
-<li>空元素<br>下面我们就来逐一了解吧！<h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><strong>块级元素占据其父元素（容器）的整个空间，因此创建了一个“块”。通常浏览器会在块级元素前后另起一个新行。</strong><br><code>&lt;address&gt;</code>联系方式信息。<br><code>&lt;article&gt;</code>5文章内容。【HTML5】<br><code>&lt;aside&gt;</code> 伴随内容。【HTML5】<br><code>&lt;audio&gt;</code> 音频播放。【HTML5】<br><code>&lt;blockquote&gt;</code>块引用。<br><code>&lt;canvas&gt;</code>绘制图形【HTML5】<br><code>&lt;dd&gt;</code>定义列表中定义条目描述。<br><code>&lt;div&gt;</code>文档分区。<br><code>&lt;dl&gt;</code>定义列表。<br><code>&lt;fieldset&gt;</code>表单元素分组。<br><code>&lt;figcaption&gt;</code>图文信息组标题【HTML5】<br><code>&lt;figure&gt;</code>图文信息组 (参照<code>&lt;figcaption&gt;</code>)【HTML5】<br><code>&lt;footer&gt;</code>区段尾或页尾【HTML5】<br><code>&lt;form&gt;</code>表单。<br><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>标题级别 1-6.<br><code>&lt;header&gt;</code>区段头或页头【HTML5】<br><code>&lt;hgroup&gt;</code>标题组【HTML5】<br><code>&lt;hr&gt;</code>水平分割线。<br><code>&lt;noscript&gt;</code>不支持脚本或禁用脚本时显示的内容。<br><code>&lt;ol&gt;</code>有序列表。<br><code>&lt;output&gt;</code>表单输出【HTML5】<br><code>&lt;p&gt;</code>行。<br><code>&lt;pre&gt;</code>预格式化文本。<br><code>&lt;section&gt;</code>一个页面区段【HTML5】<br><code>&lt;table&gt;</code>表格。<br><code>&lt;tfoot&gt;</code>表脚注。<br><code>&lt;ul&gt;</code>无序列表。<br><code>&lt;video&gt;</code>视频【HTML5】<h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><strong>一个行内元素只占据它对应标签的边框所包含的空间</strong></li>
+<li><p>都是对象</p>
+</li>
+<li><p>都可以添加属性</p>
+</li>
 </ol>
-<ul>
-<li>【字体相关】<br><code>&lt;b&gt;</code> <code>&lt;big&gt;</code> <code>&lt;i&gt;</code> <code>&lt;small&gt;</code> <code>&lt;tt&gt;</code></li>
-<li>【文本相关】<br><code>&lt;abbr&gt;</code> <code>&lt;acronym&gt;</code> <code>&lt;cite&gt;</code> <code>&lt;code&gt;</code> <code>&lt;dfn&gt;</code> <code>&lt;em&gt;</code> <code>&lt;kbd&gt;</code> <code>&lt;strong&gt;</code> <code>&lt;samp&gt;</code> <code>&lt;var&gt;</code></li>
-<li>【引用相关】<br><code>&lt;a&gt;</code> <code>&lt;bdo&gt;</code> <code>&lt;br&gt;</code> <code>&lt;img&gt;</code> <code>&lt;map&gt;</code> <code>&lt;object&gt;</code> <code>&lt;q&gt;</code> <code>&lt;script&gt;</code> <code>&lt;span&gt;</code> <code>&lt;sub&gt;</code> <code>&lt;sup&gt;</code></li>
-<li>【输入选择相关】<br><code>&lt;button&gt;</code> <code>&lt;input&gt;</code> <code>&lt;label&gt;</code> <code>&lt;select&gt;</code> <code>&lt;textarea&gt;</code></li>
+</li>
+<li><p>不同点</p>
+<ol>
+<li>是普通对象；是数组对象</li>
+<li>二者的公用属性不同，即Array.prototype ! == Object.prototype;</li>
+</ol>
+</li>
 </ul>
-<h2 id="空元素"><a href="#空元素" class="headerlink" title="空元素"></a>空元素</h2><p><strong>在 HTML 中，通常在一个空元素上使用一个闭标签是无效的。</strong><br><code>&lt;area&gt;</code><br><code>&lt;base&gt;</code><br><code>&lt;br&gt;</code><br><code>&lt;col&gt;</code><br><code>&lt;colgroup&gt;</code> 【当<code>span</code>存在时】<br><code>&lt;command&gt;</code>【已废弃使用】<br><code>&lt;embed&gt;</code><br><code>&lt;hr&gt;</code><br><code>&lt;img&gt;</code><br><code>&lt;input&gt;</code><br><code>&lt;keygen&gt;</code>【已废弃使用】<br><code>&lt;link&gt;</code><br><code>&lt;meta&gt;</code><br><code>&lt;param&gt;</code><br><code>&lt;source&gt;</code><br><code>&lt;track&gt;</code><br><code>&lt;wbr&gt;</code></p>
-<h2 id="可替换元素【css内容】"><a href="#可替换元素【css内容】" class="headerlink" title="可替换元素【css内容】"></a>可替换元素【css内容】</h2><p><strong>这些元素是一类 外观渲染独立于CSS的 外部对象</strong></p>
-<p>典型的可替换元素有<code>&lt;img&gt;</code> <code>&lt;object&gt;</code> <code>&lt;video&gt;</code> 和 表单元素，如<code>&lt;textarea&gt;</code> <code>&lt;input&gt;</code> 。<br>某些元素只在一些特殊情况下表现为可替换元素，例如 <code>&lt;audio&gt;</code> 和 <code>&lt;canvas&gt;</code> 。<br>通过 CSS <code>content</code> 属性来插入的对象 被称作 匿名可替换元素（<code>anonymous replaced elements</code>）。CSS在某些情况下会对可替换元素做特殊处理，比如计算外边距和一些auto值。需要注意的是，一部分（并非全部）可替换元素，本身具有尺寸和基线（baseline），会被像<code>vertical-align</code>之类的一些 CSS 属性用到。</p>
-<p><strong>参考网站<a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN</a></strong></p>
+<h2 id="Array的不一致性"><a href="#Array的不一致性" class="headerlink" title="Array的不一致性"></a>Array的不一致性</h2><blockquote>
+<p><code>Array</code>构造函数有一个很大的缺陷，就是不同的参数，会导致它的行为不一致。</p>
+</blockquote>
+<ol>
+<li><p>一个参数时</p>
+<pre><code class="javascript">var a = Array(3)
+var a = new Array(3)
+//效果相同，因为array是属于对象类型。而var a = object()和var o = new Object()的效果是相同的
+</code></pre>
+<p>我们执行以上的任一代码，可以得到如下的输出</p>
+<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-25/22844056.jpg" alt=""></p>
+<p>生成了一个长度为3，每个都是空值的数组</p>
+</li>
+<li><p>多个参数时</p>
+<pre><code class="javascript">var a = Array(3,3)
+</code></pre>
+<p><img src="http://91jean.oss-cn-hangzhou.aliyuncs.com/18-8-25/20601479.jpg" alt=""></p>
+<p>生成了一个长度为2，2个值都为3的数组</p>
+</li>
+<li><p>归纳</p>
+<pre><code class="javascript">new Array()        //[]
+//无参数，返回空数组
+
+new Array（1）    //[empty]
+new Array（2）    //[mepty*2]
+//单个正整数参数，返回新数组的长度，值都为空
+
+new Array(3.2) // RangeError: Invalid array length
+new Array(-3) // RangeError: Invalid array length
+// 非正整数的数值参数，报错
+
+new Array(&#39;hello&#39;) // [&#39;hello&#39;]
+new Array([1]) // [Array[1]]
+// 单个非数值（比如字符串、布尔值、对象等）作为参数，该参数是返回的新数组的成员
+
+new Array(1,2,3) // [1,2,3]
+new Array(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;) // [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]
+new Array([1],[2],[3]) //[Array[1],Array[2],Array[3]]
+// 多参数时，所有参数都是返回的新数组的成员
+</code></pre>
+</li>
+</ol>
+<p><strong>总结：当给Arrary传递不同的参数，得到的结果具有不一致性，因此，我们也不建议使用其生成新的数组，而是直接使用数组字面量。即<code>var arr = [a1,a2,a3…]</code></strong></p>
+<h2 id="伪数组"><a href="#伪数组" class="headerlink" title="伪数组"></a>伪数组</h2><ol>
+<li><p>拥有length属性的对象</p>
+</li>
+<li><p>不具有数组的原型，即没有<code>Arrary.prototype</code></p>
+<pre><code class="javascript">var o1 = {length:0}
+var o2 = {0:&#39;a&#39;,length:1}
+var o3 = {0:1,1:2,length:2}
+</code></pre>
+</li>
+</ol>
+<p>常见的伪数组有<code>arguments</code></p>
+<blockquote>
+<p><code>arguments</code>对象是所有（非箭头）函数中都可用的<strong>局部变量</strong>。你可以使用<code>arguments</code>对象在函数中引用函数的参数。此对象包含传递给函数的每个参数，第一个参数在索引0处。</p>
+</blockquote>
+<h2 id="Arrary的部分API"><a href="#Arrary的部分API" class="headerlink" title="Arrary的部分API"></a>Arrary的部分API</h2><h3 id="map"><a href="#map" class="headerlink" title="map()"></a>map()</h3><blockquote>
+<p>给数组中每一项运行给定函数，然后每次返回函数调用的结果组成的数据</p>
+</blockquote>
+<pre><code class="javascript">var arr = [1,2,3]
+var mapArr = arr.map(function(item,index,array){
+   //item:当前成员的值；index：当前成员的位置；array：原数组
+    return item*2
+})
+console.log(maoArr)
+//[2.4.6]
+</code></pre>
+<h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach()"></a>forEach()</h3><blockquote>
+<p>与<strong>map</strong>相同对数组的所有成员依次执行参数函数，但不返回值，只用来操作数据</p>
+</blockquote>
+<pre><code class="javascript">var arr = [1,2,3]
+arr.forEach(function(item,index,array){
+    //执行某些操作
+})
+</code></pre>
+<p><strong>注意：</strong></p>
+<ol>
+<li><strong>forEach</strong>方法无法中断执行，总是会讲所有成员遍历完</li>
+<li><strong>forEach</strong>方法会跳过数组的空位，但无法跳过<strong>undefined</strong>和<strong>null</strong></li>
+</ol>
+<h3 id="filter"><a href="#filter" class="headerlink" title="filter()"></a>filter()</h3><blockquote>
+<p>对数组中的每一项运行给定函数，返回该函数会返回true 的项目组成的数组</p>
+</blockquote>
+<pre><code class="javascript">var arr = [1,2,3,4,5,6]
+var filterArr = arr.filter(function(item,index,array){
+    return (item % 2 === 0)
+})
+console.log(filterArr)
+//[2,4,6]
+</code></pre>
+<h3 id="reverse"><a href="#reverse" class="headerlink" title="reverse()"></a>reverse()</h3><blockquote>
+<p>用于反转数组项的顺序，并返回改变后的数组。此方法会改变原数组</p>
+</blockquote>
+<pre><code class="javascript">var arr = [1,2,3]
+arr.reverse()
+//[3,2,1]
+</code></pre>
+<h3 id="sort"><a href="#sort" class="headerlink" title="sort()"></a>sort()</h3><blockquote>
+<p><code>sort</code>方法不是按照大小排序，而是按照字典顺序。也就是说，数值会被先转成字符串，再按照字典顺序进行比较</p>
+</blockquote>
+<pre><code class="javascript">[&#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;].sort()
+// [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]
+
+[4, 3, 2, 1].sort()
+// [1, 2, 3, 4]
+
+[11, 101].sort()
+// [101, 11]
+</code></pre>
+<blockquote>
+<p>如果想让<code>sort</code>方法按照自定义方式排序，可以传入一个函数作为参数</p>
+</blockquote>
+<pre><code class="javascript">var arr = [10111, 1101, 111]
+arr.sort(function (a, b) {
+  return a - b;
+})
+// [111, 1101, 10111]
+</code></pre>
+<h3 id="join"><a href="#join" class="headerlink" title="join()"></a>join()</h3><blockquote>
+<p><code>join</code>方法以指定参数作为分隔符，将所有数组成员连接为一个字符串返回。如果不提供参数，默认用逗号分隔。</p>
+</blockquote>
+<pre><code class="javascript">var arr = [1,2,3,4]
+arr.join(&#39;|&#39;)    //&quot;1|2|3|4&quot;
+
+var arr = [1,2,3,4]
+arr.join()    //&quot;1,2,3,4&quot;
+</code></pre>
+<h3 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h3><blockquote>
+<p><code>concat</code>方法用于多个数组的合并。它将新数组的成员，添加到原数组成员的后部，然后返回一个新数组，原数组不变。</p>
+</blockquote>
+<pre><code class="javascript">[&#39;hello&#39;].concat([&#39;world&#39;])
+// [&quot;hello&quot;, &quot;world&quot;]
+
+[1,2,3].concat([])
+//[1,2,3]；利用空数组，进行复制
+</code></pre>
+<h3 id="reduce"><a href="#reduce" class="headerlink" title="reduce()"></a>reduce()</h3><blockquote>
+<p>从左到右依次处理数组的每个成员，最终累计为一个值</p>
+</blockquote>
+<pre><code>var arr = [1,2,3]
+arr.reduce(function(a,b){
+    return a+b
+})
+//6
+</code></pre><p><strong>reduce()</strong>其他用法</p>
+<pre><code class="javascript">a.reduce(function(arr,n){
+arr.push(n*2)
+return arr
+},[])
+//map 功能
+
+a.reduce(function(arr,n){
+    if (n % 2 === 0){
+        arr.push(n)
+    }
+return arr
+},[])
+//fliter 功能
+</code></pre>
+<p>### </p>
 <p><strong>——远方不远</strong></p>
 
         
@@ -556,7 +723,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/08/02/html常用标签/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/08/27/JS函数/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -570,7 +737,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2018/07/30/浅析http【请求与响应】/" id="post_nav-older" class="next-content">
+        <a href="/2018/08/19/JS-全局变量与原型/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
